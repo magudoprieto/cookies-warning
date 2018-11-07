@@ -1,0 +1,126 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.wrapper{
+	max-width: 1170px;
+	margin: 0px auto;
+}
+
+.cabecera div{
+	width: 50%;
+	height: 60px;
+	background-color: orange;
+	float:left;
+	border:10px solid white;
+}
+
+.cabecera:after{
+	clear: both;
+	height: 0px;
+	display: block;
+}
+
+.main{
+	width: 100%;
+	background-color: yellow;
+	height: 450px;
+	border:10px solid white;
+}
+
+.aside div{
+	width: 33.33%;
+	background-color: blue;
+	height:70px;
+	border:10px solid white;
+	float: left;
+}
+
+.aside:after{
+	clear: both;
+	height: 0px;
+}
+
+.footer div{
+	width: 25%;
+	background-color: green;
+	height: 70px;
+	border:10px solid white;
+	float: left;
+}
+
+@media (max-width: 768px){
+	
+	.cabecera div{
+		width: 100%;
+	}
+
+	.aside div{
+	width: 100%;
+	}
+
+	.footer div{
+	width: 50%;
+	float: left;
+	}
+}
+
+@media (max-width: 320px){
+	
+	.footer div{
+	width: 100%;
+	float: left;
+	}
+}
+
+/*Robapaginas*/
+
+#robaPaginasFondo{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	left: 0px;
+}
+
+#robaPaginasFondoNoVisible{
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top:0px;
+	left: 0px;
+	display: none;
+}
+
+#robaPaginasFondo #mensaje{
+	background-color: white;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	top:15%;
+	left: 35%;
+	border: 8px double red;
+}
+
+#robaPaginasFondo #mensaje h3{
+	padding-top: 100px;
+	padding-bottom: 40px;
+	padding-left: 30px;
+	
+}
+
+#robaPaginasFondo #mensaje p{
+	padding-bottom: 100px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+#robaPaginasFondo #mensaje .cierre{
+	left: 85%;
+	position: absolute;
+	cursor: pointer;
+}
